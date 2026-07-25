@@ -28,7 +28,7 @@ jobs:
           pyinstaller --onefile --windowed --name PhotoRenamer rename_photos_gui.py
 
       - name: 上传打包好的 EXE
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows-EXE-Build
           path: dist/PhotoRenamer.exe
